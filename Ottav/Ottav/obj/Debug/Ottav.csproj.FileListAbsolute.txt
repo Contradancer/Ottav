@@ -66,3 +66,4 @@ C:\REPO_OTTAV\Ottav\Ottav\bin\Microsoft.Owin.Security.Twitter.xml
 C:\REPO_OTTAV\Ottav\Ottav\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\REPO_OTTAV\Ottav\Ottav\obj\Debug\Ottav.dll
 C:\REPO_OTTAV\Ottav\Ottav\obj\Debug\Ottav.pdb
+C:\REPO_OTTAV\Ottav\Ottav\obj\Debug\Ottav.csprojResolveAssemblyReference.cache
