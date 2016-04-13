@@ -1,6 +1,21 @@
 ﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+    /*padding-top: 50px;
+    padding-bottom: 20px;*/
+    font-family: "Roboto";
+    background-color: #ECF0F1;
+    color: #2C3E50;
+}
+
+h2 {
+    font-family: "Roboto";
+}
+
+h3 {
+    font-family: "Roboto";
+}
+
+h4 {
+    font-family: "Roboto";
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -20,5 +35,38 @@
 input,
 select,
 textarea {
-    max-width: 280px;
+}
+
+/* To remove textbox autofill Background-color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active
+{
+    -webkit-text-fill-color: #2C3E50 !important;
+    /*-webkit-box-shadow: 0 0 0px 1000px #3498DB inset;*/
+
+    /*transition-property: background-color;
+    transition-duration: 5000s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;*/
+}
+
+.form-control {
+    border-radius: 0;
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+    border-bottom: 1px solid #2C3E50;
+}
+
+.form-control:focus {
+    border-color: inherit;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.control-label {
+    padding-left: 0;
+    text-align: left !important
 }

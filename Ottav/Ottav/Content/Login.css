@@ -1,0 +1,98 @@
+﻿.image-login img{
+    margin-top:40px;
+    margin-bottom: 20px;
+    width: 160px;
+}
+
+.image-login, .title-login{
+    text-align:center;
+}
+
+.title-login{
+    color:#00A09A;
+    font-size:30px;
+    margin: 40px 0 50px 0;
+}
+
+.control-label{
+    color:#2C3E50;
+    font-weight:300;
+    font-size:15px;
+}
+
+.form-control{
+    color:#2C3E50;
+    font-size:16px;
+}
+
+.remember-me-row {
+    margin-top: 20px;
+}
+
+.remember-me{
+    color:#2C3E50;
+    font-weight:300;
+    font-size:18px;
+}
+
+.btn-login{
+    width:100%;
+}
+
+.btns-login{
+    margin-top:60px;
+}
+
+.btn-login-ok{
+    padding-left:15px;
+}
+
+.btn-login-ok input {
+    border: 0;
+}
+
+.btn-login-register{
+    padding-right:15px;
+}
+
+.button-settings {
+    width: 20px;
+    height: 20px;
+    margin: 2px -20px -7px !important;
+}
+
+
+
+.sub-title{
+    color:#4b5d70;
+    font-weight:300;
+    font-size:18px;
+}
+
+/*.btn-default.btn-login{
+    border: 1px solid #1e4061;
+    background-color: #OttavYellow;
+}*/
+
+.btn-primary.btn-login{
+    background-color: #46B19D;
+}
+
+.myFile {
+  position: relative;
+  overflow: hidden;
+  float: left;
+  clear: left;
+      margin: 0px;
+    margin-top: 7px;
+}
+.myFile input[type="file"] {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  font-size: 100px;
+  filter: alpha(opacity=0);
+  cursor: pointer;
+}
