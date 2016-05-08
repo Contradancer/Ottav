@@ -32,6 +32,10 @@ C:\REPO_OTTAV\Ottav\Ottav\bin\Microsoft.Owin.Security.Twitter.dll
 C:\REPO_OTTAV\Ottav\Ottav\bin\Microsoft.Web.Infrastructure.dll
 C:\REPO_OTTAV\Ottav\Ottav\bin\Newtonsoft.Json.dll
 C:\REPO_OTTAV\Ottav\Ottav\bin\Owin.dll
+C:\REPO_OTTAV\Ottav\Ottav\bin\SendGrid.dll
+C:\REPO_OTTAV\Ottav\Ottav\bin\SendGrid.SmtpApi.dll
+C:\REPO_OTTAV\Ottav\Ottav\bin\SendGridMail.dll
+C:\REPO_OTTAV\Ottav\Ottav\bin\System.Net.Http.Formatting.dll
 C:\REPO_OTTAV\Ottav\Ottav\bin\System.Web.Helpers.dll
 C:\REPO_OTTAV\Ottav\Ottav\bin\System.Web.Mvc.dll
 C:\REPO_OTTAV\Ottav\Ottav\bin\System.Web.Optimization.dll
@@ -41,6 +45,8 @@ C:\REPO_OTTAV\Ottav\Ottav\bin\System.Web.WebPages.dll
 C:\REPO_OTTAV\Ottav\Ottav\bin\System.Web.WebPages.Razor.dll
 C:\REPO_OTTAV\Ottav\Ottav\bin\WebGrease.dll
 C:\REPO_OTTAV\Ottav\Ottav\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\REPO_OTTAV\Ottav\Ottav\bin\Newtonsoft.Json.xml
+C:\REPO_OTTAV\Ottav\Ottav\bin\System.Net.Http.Formatting.xml
 C:\REPO_OTTAV\Ottav\Ottav\bin\System.Web.Helpers.xml
 C:\REPO_OTTAV\Ottav\Ottav\bin\System.Web.Mvc.xml
 C:\REPO_OTTAV\Ottav\Ottav\bin\System.Web.Optimization.xml
@@ -49,7 +55,6 @@ C:\REPO_OTTAV\Ottav\Ottav\bin\System.Web.WebPages.xml
 C:\REPO_OTTAV\Ottav\Ottav\bin\System.Web.WebPages.Deployment.xml
 C:\REPO_OTTAV\Ottav\Ottav\bin\System.Web.WebPages.Razor.xml
 C:\REPO_OTTAV\Ottav\Ottav\bin\Antlr3.Runtime.pdb
-C:\REPO_OTTAV\Ottav\Ottav\bin\Newtonsoft.Json.xml
 C:\REPO_OTTAV\Ottav\Ottav\bin\EntityFramework.xml
 C:\REPO_OTTAV\Ottav\Ottav\bin\EntityFramework.SqlServer.xml
 C:\REPO_OTTAV\Ottav\Ottav\bin\Microsoft.AspNet.Identity.Core.xml
@@ -66,9 +71,4 @@ C:\REPO_OTTAV\Ottav\Ottav\bin\Microsoft.Owin.Security.Twitter.xml
 C:\REPO_OTTAV\Ottav\Ottav\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\REPO_OTTAV\Ottav\Ottav\obj\Debug\Ottav.dll
 C:\REPO_OTTAV\Ottav\Ottav\obj\Debug\Ottav.pdb
-C:\REPO_OTTAV\Ottav\Ottav\bin\SendGrid.dll
-C:\REPO_OTTAV\Ottav\Ottav\bin\SendGrid.SmtpApi.dll
-C:\REPO_OTTAV\Ottav\Ottav\bin\SendGridMail.dll
-C:\REPO_OTTAV\Ottav\Ottav\bin\System.Net.Http.Formatting.dll
-C:\REPO_OTTAV\Ottav\Ottav\bin\System.Net.Http.Formatting.xml
 C:\REPO_OTTAV\Ottav\Ottav\obj\Debug\Ottav.csprojResolveAssemblyReference.cache

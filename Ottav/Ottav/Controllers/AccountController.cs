@@ -68,7 +68,7 @@ namespace Ottav.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Login(LoginViewModel model, string returnUrl)
         {
-            // If received fields are invalid, return model values back
+            // If Form fields are invalid, return model values back
             if (!ModelState.IsValid)
             {
                 return View(model);
@@ -393,7 +393,7 @@ namespace Ottav.Controllers
         public ActionResult LogOff()
         {
             AuthenticationManager.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Login", "Account");
         }
 
         //

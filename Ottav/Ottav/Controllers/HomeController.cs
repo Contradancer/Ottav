@@ -23,11 +23,11 @@ namespace Ottav.Controllers
         //[Route("about")]
         //[Route("about/{valor}")]
         //public ActionResult About(int valor)
-        public ActionResult About(int valor)
+        public ActionResult About()
 
         {
             ViewBag.Message = "Your application description page.";
-            ViewBag.valor = valor;
+            ViewBag.valor = 3;
 
             return View();
         }

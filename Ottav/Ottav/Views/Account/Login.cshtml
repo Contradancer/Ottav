@@ -1,9 +1,6 @@
-﻿@using Ottav.Models
-@model LoginViewModel
-@{
-    ViewBag.Title = "Log in";
-    //Layout = null;
-}
+﻿@model Ottav.Models.LoginViewModel
+
+@{  Layout = "~/Views/Shared/_LoginLayout.cshtml";  }
 
 @Styles.Render("~/Content/Login.css")
 
@@ -17,15 +14,15 @@
 
         <div class="row">
             <div class="col-md-12 col-xs-12 col-sm-12 title-login">
-                <h2>@ViewBag.Title</h2>
+                <h2>Login</h2>
             </div>
         </div>
 
         <section id="loginForm">
-            @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+            @using (Html.BeginForm("Login", "Account", new { returnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
             {
                 @Html.AntiForgeryToken()
-                @*<hr/>*@
+
                 @Html.ValidationSummary(true, "", new { @class = "text-danger" })
                 <div class="form-group">
                     <div class="row">
@@ -39,7 +36,7 @@
                         <div class="col-sm-3 visible-sm"></div>
                         <div class="col-xs-1 visible-xs"></div>
                         <div class="col-md-12 col-xs-10 col-sm-6">
-                            @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                            @Html.TextBoxFor(m => m.Email, new { @class = "form-control login-control" })
                             @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
                         </div>
                     </div>
@@ -57,7 +54,7 @@
                         <div class="col-sm-3 visible-sm"></div>
                         <div class="col-xs-1 visible-xs"></div>
                         <div class="col-md-12 col-xs-10 col-sm-6">
-                            @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                            @Html.PasswordFor(m => m.Password, new { @class = "form-control login-control" })
                             @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
                         </div>
                     </div>
@@ -67,16 +64,14 @@
                     <div class="row">
                         <div class="col-sm-3 visible-sm"></div>
                         <div class="col-xs-1 visible-xs"></div>
-                        <div class="col-md-12 col-xs-10 col-sm-6 margin-top-25">
+                        <div class="col-md-12 col-xs-10 col-sm-6">
                             <div class="row remember-me-row">
-                                <div class="col-md-5 col-sm-6 col-xs-6" style="padding-right: 0;">
+                                <div class="col-md-5 col-sm-6 col-xs-4">
                                     <label class="remember-me" for="RememberMe">Remember me?</label>
                                 </div>
-                                
-                                <div class="col-md-1 col-sm-1 col-xs-1" style="padding-left:0;">
+
+                                <div class="col-md-1 col-sm-1 col-xs-1">
                                     @Html.CheckBoxFor(m => m.RememberMe, new { @class = "form-control button-settings" })
-                                    @*<input type="checkbox" id="settingsbutton" class="button-settings" name="RememberMe" />
-                                    <label for="settingsbutton" class="cursor-pointer"></label>*@
                                 </div>
                             </div>
                         </div>
@@ -86,33 +81,42 @@
                 <div class="form-group">
                     <div class="col-sm-3 visible-sm"></div>
                     <div class="col-xs-1 visible-xs"></div>
-                    <div class="col-md-12 col-xs-10 col-sm-6">
-                        <div class="row btns-login">
-                            <div class="col-xs-6  col-md-6 col-sm-6  btn-login-register">
-                                @*<a class="btn btn-default btn-login pull-right" href="/" role="button">Register</a>*@
-                                @Html.ActionLink("Register", "Register", null, new { @class = "btn btn-default btn-login pull-right" })
+                    <div class="col-md-12 col-xs-10 col-sm-6 buttonsGroup">
+                        <div class="row">
+                            <div class="col-xs-6  col-md-6 col-sm-6">
+                                @Html.ActionLink("Register", "Register", null, new { @class = "btn btn-default btn-login-register pull-right" })
                             </div>
-                            <div class="col-xs-6 col-md-6 col-sm-6 btn-login-ok">
-                                <input class="btn btn-primary btn-login pull-left" type="submit" value="Log in"/>
+                            <div class="col-xs-6 col-md-6 col-sm-6">
+                                <input class="btn btn-primary btn-login-ok pull-left" type="submit" value="Log in" />
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
                 //Enable this once you have account confirmation enabled for password reset functionality
-                <p>
-                    @Html.ActionLink("Forgot your password?", "ForgotPassword")
-                </p>
+                <div class="form-group">
+                    <div class="col-sm-3 visible-sm"></div>
+                    <div class="col-xs-1 visible-xs"></div>
+
+                    <div class="col-md-12 col-sm-6 col-xs-10">
+                        <div class="row">
+                            <p>
+                                @Html.ActionLink("Forgot your password?", "ForgotPassword", "", new { @class = "forgotPass" })
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
             }
         </section>
 
         @*<div class="row">
-                <div class="col-md-12 col-xs-12 col-sm-12">
-                    <section id="socialLoginForm">
-                        @Html.Partial("_ExternalLoginsListPartial", new ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })
-                    </section>
-                </div>
-          </div>*@
+                  <div class="col-md-12 col-xs-12 col-sm-12">
+                      <section id="socialLoginForm">
+                          @Html.Partial("_ExternalLoginsListPartial", new ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })
+                      </section>
+                  </div>
+            </div>*@
     </div>
 </div>
 

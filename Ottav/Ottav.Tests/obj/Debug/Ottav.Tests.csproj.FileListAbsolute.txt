@@ -1,4 +1,3 @@
-C:\REPO_OTTAV\Ottav\Ottav.Tests\obj\Debug\Ottav.Tests.csprojResolveAssemblyReference.cache
 C:\REPO_OTTAV\Ottav\Ottav.Tests\bin\Debug\roslyn\csc.exe
 C:\REPO_OTTAV\Ottav\Ottav.Tests\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 C:\REPO_OTTAV\Ottav\Ottav.Tests\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.dll
@@ -54,5 +53,6 @@ C:\REPO_OTTAV\Ottav\Ottav.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.xml
 C:\REPO_OTTAV\Ottav\Ottav.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 C:\REPO_OTTAV\Ottav\Ottav.Tests\bin\Debug\EntityFramework.xml
 C:\REPO_OTTAV\Ottav\Ottav.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+C:\REPO_OTTAV\Ottav\Ottav.Tests\obj\Debug\Ottav.Tests.csprojResolveAssemblyReference.cache
 C:\REPO_OTTAV\Ottav\Ottav.Tests\obj\Debug\Ottav.Tests.dll
 C:\REPO_OTTAV\Ottav\Ottav.Tests\obj\Debug\Ottav.Tests.pdb

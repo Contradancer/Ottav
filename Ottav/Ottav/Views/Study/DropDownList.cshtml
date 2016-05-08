@@ -1,72 +1,75 @@
-﻿@{
+﻿@model Ottav.Models.Study.DropDownFields
+
+@{
     ViewBag.Title = "Drop Down List Examples";
-    ViewBag.TestVarSelOption = "ValorTest3#$%&/";
+    ViewBag.TestVarSelOption = "Valor em ViewBag";
 }
 
+<html>
 <body>
-    <h1 class="page-header" style="margin: 70px 0 50px 0">@ViewBag.Title</h1>
+    <div class="mainContainer">
+        <div class="box">
+            <h1 class="page-header" style="margin: 70px 0 50px 0">@ViewBag.Title</h1>
 
-    <h3>By using &lt;select&gt; HTML Tags</h3>
+            <h3>- By using &lt;select&gt; HTML Tags</h3>
 
-    <form action="/Study/DropDownList" method="post">
-        <select class="btn" id="optionSelect" name="optionSelect" required autofocus>
-            <option value="0">...</option>
-            <option value="http://badjoras.com">Option 1</option>
-            <option value="2" selected="selected">Option 2</option>
-            <option value=@ViewBag.TestVarSelOption>Option 3</option>
-            <option value="4">Option 4</option>
-        </select>
+            <form action="/Study/DropDownList" method="post">
+                <select class="btn" id="optionSelect" name="optionSelect" required autofocus>
+                    <option value="0">...</option>
+                    <option value="http://badjoras.com">Option 1</option>
+                    <option value="2" selected="selected">Option 2</option>
+                    <option value=@ViewBag.TestVarSelOption>Option 3</option>
+                    <option value="4">Option 4</option>
+                </select>
 
-        <input class="btn" type="submit" value="Enviar" style="margin-left:30px; width:200px" />
-    </form>
+                <input class="btn" type="submit" value="Enviar" style="margin-left:30px; width:200px" />
+            </form>
 
-    @if (ViewBag.optSelected != null)
-    {
-        <p style="color:red; font-weight:bolder; margin-top:20px;">Valor escolhido: @ViewBag.optSelected</p>
-    }
+            @if (ViewBag.optSelected != null)
+            {
+                <p style="color:red; font-weight:bolder; margin-top:20px;">Valor escolhido: @ViewBag.optSelected</p>
+            }
 
+            <br /><hr />
+            <h3>- By using DropDownListFor()</h3>
 
+            @using (Html.BeginForm("DropDownList", "Study", FormMethod.Post))
+            {
+                <div class="col-md-4">
+                    @Html.DropDownListFor(model => model.selectedField, Model.DropDownListOptions, new { @class = "form-control" })
+                </div>
+                <div class="col-md-3">
+                    <input class="btn" type="submit" value="Enviar" style="margin-left:30px; width:200px" />
+                </div>
+            }
 
+            @if (Model.selectedField != null)
+            {
+                <p style="color:red; font-weight:bolder; margin-top:20px;">Valor escolhido: @Model.selectedField</p>
+            }
 
-    <br /><hr />
-    <h3>By using &lt;div&gt; & &lt;ul&gt; list HTML Tags</h3>
+            <hr />
+            <h3>- By using DropDownList()</h3>
 
+            @using (Html.BeginForm("DropDownList", "Study", FormMethod.Post))
+            {
+                // MoviesList has a double meaning:
+                // - Is the key to find ViewBag.Movie IEnumerable<SelectListItem>
+                // - Identifies the value returned by the form
 
+                <div class="col-md-4">
+                    @Html.DropDownList("MoviesList", null, new { @class = "btn" })
+                </div>
+                <div class="col-md-3">
+                    <input class="btn" type="submit" value="Enviar" style="margin-left:30px; width:200px" />
+                </div>
+            }
 
-
-    @*.dropdown indicates a dropdown menu*@
-    <div class="dropdown">
-        @*.dropdown-toggle class with data-toggle to the button is what allowes to open the dropdown list menu*@
-        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
-            Dropdown Example
-            @*.caret creates an arrow on the dropbox *@
-            <span class="caret"></span>
-        </button>
-        @*Adding .dropdown.menu to a ul tag, creates the actual items of the dropdown*@
-        <ul class="dropdown-menu">
-            <li><a href="#">Option 1</a></li>
-            <li><a href="#">Option 2</a></li>
-            <li><a href="#">Option 3</a></li>
-        </ul>
+            @if (Model.selectedField != null)
+            {
+                <p style="color:red; font-weight:bolder; margin-top:20px;">Valor escolhido: @ViewBag.opt2Selected</p>
+            }
+        </div>
     </div>
-
-
-
-
-    <br /><hr />
-    <h3>By using DropDownList</h3>
-
-
-
-
-    @using (Html.BeginForm("DropDownList", "Study", FormMethod.Post, new { enctype = "multipart/form-data" }))
-    {
-        @Html.ValidationSummary(true)
-
-        @*@Html.DropDownList*@
-
-    }
 </body>
-
-
-
+</html>
