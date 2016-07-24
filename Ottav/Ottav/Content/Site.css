@@ -53,10 +53,11 @@ input:-webkit-autofill:active
 }
 
 .mainContainer {
-    width: 1100px;
+    min-height: 770px;
+    margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 110px;
+    background-color: red;
 }
 
 .box {
@@ -75,6 +76,7 @@ input:-webkit-autofill:active
     background-color: #46B19D;
     border-color:#43ae9a;
     color: white;
+    margin-bottom: 100px;
 }
 
 .main-nav .navbar-nav > li > a {
